@@ -20,6 +20,5 @@ public class DVD {
 
     public int getDVDOrderNum() {
         return orderNum;
-    }
-    
+    }    
 }
