@@ -1,24 +1,6 @@
-public class DVD {
+public class DVD extends Product{
 
-    private String dvdName;
-    private double price;
-    private int orderNum;
-
-    public DVD(String dvdName, double price, int orderNum) {
-        this.dvdName = dvdName;
-        this.price = price;
-        this.orderNum = orderNum;
+    public DVD(String name, double price, int orderNum, int stock){
+        super(name, price, orderNum,stock);
     }
-
-    public String getDVDName() {
-        return dvdName;
-    }
-    
-    public double getDVDPrice() {
-        return price;
-    }
-
-    public int getDVDOrderNum() {
-        return orderNum;
-    }    
 }
