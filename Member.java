@@ -1,6 +1,6 @@
 public class Member {
     
-    private String memberName;
+    private String name;
     private String address;
     private String email;
     private int memberID = 1;
@@ -8,16 +8,16 @@ public class Member {
 
     public Member(){}
 
-    public Member(String memberName, String address, String email, int memberID, double totalSpending){
-        this.memberName = memberName;
+    public Member(String name, String address, String email, int memberID, double totalSpending){
+        this.name = name;
         this.address = address;
         this.email = email;
         this.memberID = memberID;
         this.totalSpending = totalSpending;
     }
 
-    public String getMemberName() {
-        return memberName;
+    public String getName() {
+        return name;
     }
     
     public String getAddress() {
@@ -28,7 +28,7 @@ public class Member {
         return email;
     }
 
-    public int getMemberID() {
+    public int getID() {
         return memberID;
     }
 
