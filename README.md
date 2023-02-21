@@ -1,1 +1,1 @@
-A bookstore application in Java that interacts with users allowing them to purchase a products(s), enroll as a member, and proceed to checkout
+A bookstore application in Java that reads data from a file to construct an inventory that allows users to purchase products(s), enroll as members, and proceed to checkout. The application also builds an end of day report once customer is done shopping as well as a new updated inventory.
