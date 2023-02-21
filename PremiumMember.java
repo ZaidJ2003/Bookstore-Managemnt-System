@@ -22,4 +22,3 @@ public class PremiumMember extends Member{
         return monthlyFeePaid;
     }
 }
-
