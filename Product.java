@@ -4,12 +4,16 @@ public abstract class Product implements Comparable<Product> {
     private double price;
     private int orderNum;
     private int stock = 1;
+    private String author;
+    private int bought = 1;
 
-    public Product(String name, double price, int orderNum, int stock){
+    public Product(String name, String author, double price, int orderNum, int stock, int bought){
         this.name = name;
         this.price = price;
         this.orderNum = orderNum;
+        this.author = author;
         this.stock = stock;
+        this.bought = bought;
     }
 
     public String getName(){
@@ -28,6 +32,10 @@ public abstract class Product implements Comparable<Product> {
         return stock;
     }
 
+    public String getAuthor(){
+        return author;
+    }
+
     public void incrementStock(){
         stock++;
     }
@@ -41,13 +49,21 @@ public abstract class Product implements Comparable<Product> {
         stock--;
     }
 
+    public int getBought(){
+        return bought;
+    }
+
+    public void incrementBought(){
+        bought++;
+    }
+
     @Override
     public int compareTo(Product obj) { //
-        if(obj.price > price){
-            return -1;
-        }
-        else if(obj.price < price){
+        if(orderNum > obj.orderNum){
             return 1;
+        }
+        else if(orderNum < obj.orderNum){
+            return -1;
         }
     return 0;
     }
