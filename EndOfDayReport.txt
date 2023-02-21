@@ -1,0 +1,9 @@
+End of Day Report: 
+products purchased:
+2 copies of class Book fahrenheit 451
+1 copies of class CD a night at the opera
+1 copies of class DVD the dark knight
+Number of new members registered:
+members: 2
+premium members: 2
+Total sales: $39.96
